@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/search.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/contacts.css">
+    <link rel="stylesheet" href="/stylesheets/catalog.css">
+    <link rel="stylesheet" href="/stylesheets/page.css">
+</head>
+<body>
+    <header>{{> header}}</header>
+
+    <main>
+        <div class="catalog">
+            <div class="catalog_left">
+                {{> search}}
+            </div>
+            <div class="catalog_right">
+                {{{body}}}
+            </div>
+        </div>
+    </main>
+
+    <footer>{{> footer}}</footer>
+</body>
+    <script src="/Server/public/scripts/search.js"></script>
+<html>

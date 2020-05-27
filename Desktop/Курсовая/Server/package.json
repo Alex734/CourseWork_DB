@@ -1,0 +1,13 @@
+{
+  "name": "auto_showroom",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^4.0.4",
+    "hbs": "^4.1.1",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

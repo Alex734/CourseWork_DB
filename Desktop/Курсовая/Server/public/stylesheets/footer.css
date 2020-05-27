@@ -1,0 +1,16 @@
+footer{
+    background: #1d1d1d;
+    font-size: 18px;
+    max-width: 80%;
+    margin: 0 auto;
+    position: fixed;
+    right: 150px;
+    left: 150px;
+    bottom: 0px;
+}
+
+footer div{
+    color: white;
+    padding: 5px auto 0;
+}
+

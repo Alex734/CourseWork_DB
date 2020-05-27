@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: block;
+    width: 100%;
+    min-width: 320px;
+}
+
+header{
+  }
+
+main{
+    display: block;
+    max-width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.catalog{
+    display: block;
+    clear: both;
+    min-height: 600px;
+}
+
+.catalog_left{
+    float: left;
+    width: 260px;
+}
+
+.catalog_right{
+    float: left;
+    width: 920px;
+}
+
+
+
+
+

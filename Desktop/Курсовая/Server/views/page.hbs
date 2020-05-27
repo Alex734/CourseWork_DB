@@ -1,0 +1,48 @@
+<div class="TI">
+    {{#each auto}}
+    <div class="">
+        <a class="page_img" href="">
+            <img class="page-img" src="http://localhost:3000/img/{{img}}.jpeg" alt="">
+        </a>
+        <div class="left_block">
+            <div class="TI_title">Технические характеристики</div>
+            <div class="TI_coll">
+                <div class="block">
+                    Марка<span><a> {{Make}}</a></span>
+                </div>
+                <div class="block">
+                    Модель<span><a> {{Model}}</a></span>
+                </div>
+                <div class="block">
+                    Год {{year}}<span><a>{{Year}}</a></span>
+                </div>
+                <div class="block">
+                    Тип кузова<span><a> {{VehicleType}}</a></span>
+                </div>  
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    {{#each TI}}
+    <div class="">
+        <div class="left_block">
+            <div class="t_coll">
+                <div class="block">
+                    Тип двигателя<span><a>  {{MotorType}}</a></span>
+                </div>
+                <div class="block">
+                    Объем двигателя, {{MotVol}}л<span></span>
+                </div>
+                <div class="block">
+                    КПП<span><a>  {{Transmission}}</a></span>
+                </div>
+                <div class="block">Привод<span><a>  {{Drive}}</a></span>
+                </div>
+                <div class="block">
+                    Цвет авто<span><a>  {{Color}}</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

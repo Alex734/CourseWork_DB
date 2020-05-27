@@ -1,0 +1,47 @@
+.search{
+    display: block;
+    background-color: cornsilk;
+}
+
+.search_block{
+    padding: 10px;
+}
+
+select{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    outline: none;
+    color: #444;
+}
+
+h3{
+    padding: 10px 5%;
+}
+
+hr{
+    padding: 0 10px;
+}
+
+form p{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 18px;
+    color: #444;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #d82133;
+    padding: 14px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    box-shadow: 0px 2px 4px #969696;
+}

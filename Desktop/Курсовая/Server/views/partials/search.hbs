@@ -1,0 +1,106 @@
+<form class="search" action="/catalog" method="POST">
+    <h3>Параметры автомобиля</h3>
+    <hr />
+    <div class="search_block">
+        <select name="make" id="make">
+            <option value="%">Выберите марку</option>
+            <option value="Ford">Ford</option>
+            <option value="Audi">Audi</option>
+            <option value="KIA">KIA</option>
+        </select>
+    </div>
+
+    <div class="search_block">
+        <select name="model" id="model">
+            <option value="%">Выберите модель</option>
+        </select>
+    </div>
+    <div class="search_block">
+        <p>Год выпуска</p>
+        <select name="year_from" id="year_from">
+            <option value="2016">От</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+        </select>
+        <select name="year_to" id="year_to">
+            <option value="2020">До</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+        </select>
+    </div>
+    <div class="search_block">
+        <p> Цена</p>
+        <select name="price_from" id="year_from">
+            <option value="0">От</option>
+            <option value="0">0</option>
+            <option value="1000">1000</option>
+            <option value="5000">5000</option>
+            <option value="10000">10000</option>
+            <option value="20000">20000</option>
+            <option value="50000">50000</option>
+        </select>
+        <select name="price_to" id="year_to">
+            <option value="50000">До</option>
+            <option value="0">0</option>
+            <option value="1000">1000</option>
+            <option value="5000">5000</option>
+            <option value="10000">10000</option>
+            <option value="20000">20000</option>
+            <option value="50000">50000</option>
+        </select>
+    </div>
+    <div class="search_block">
+        <select name="vehicle_type" id="vehicle_type">
+            <option value="%">Тип кузова</option>
+            <option value="Универсал">Универсал</option>
+            <option value="Седан">Седан</option>
+            <option value="Хэтчбек">Хэтчбек</option>
+            <option value="Внедорожник">Внедорожник</option>
+        </select>
+    </div>
+    <div>
+        <input class="btn" type="submit" value="Поиск" />
+    </div>
+</form>
+
+<script>
+    make.onchange = function () {
+        //alert('Спасибо');
+
+        document.getElementById("model").options.length = 0;
+
+        let firstOption = new Option("Выберите модель","*");
+        let newOption1 = new Option("FusionII", "FusionII");
+        let newOption2 = new Option("KugaII", "KugaII");
+        let newOption3 = new Option("FocusIII", "FocusIII");
+        let newOption4 = new Option("A4", "A4");
+        let newOption5 = new Option("A6", "A6");
+        let newOption6 = new Option("KIA", "KIA");
+
+        var selectedOption = document.getElementById("make").value;
+        //alert( selectedOption);
+
+        if (selectedOption === "Ford") {
+            model.append(firstOption);
+            model.append(newOption1);
+            model.append(newOption2);
+            model.append(newOption3);
+        }
+        if (selectedOption === "Audi") {
+            model.append(firstOption);
+            model.append(newOption4);
+            model.append(newOption5);
+        }
+        if (selectedOption === "KIA") {
+            model.append(firstOption);
+            model.append(newOption6);
+        }
+
+    };
+</script>

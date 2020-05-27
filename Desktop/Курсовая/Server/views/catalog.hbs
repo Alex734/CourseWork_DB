@@ -1,0 +1,21 @@
+<div class="catalog_head"><h1>Введите данные для поиска нужного авто!</h1></div>
+
+<div class="all_tovar" >
+{{#each autos}}
+    <div class="tovar" id={{idAuto}}>
+        <a class="tov_img" href="http://localhost:3000/page/{{idAuto}}">
+            <img class="tov-img"
+                src="http://localhost:3000/img/{{img}}.jpeg"
+                alt="">
+        </a>
+        <a class="tov_info" href="http://localhost:3000/page/{{idAuto}}">
+            <strong>{{Make}} {{Model}}</strong>
+            <p>
+                <span class="g_hide">{{VehicleType}}</span><br>
+                <span> {{Year}} </span>
+            </p>
+            <div class="tov_price">{{Price}} р.</span></div>
+        </a>
+    </div>
+{{/each}}
+</div>

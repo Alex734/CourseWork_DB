@@ -1,0 +1,34 @@
+.TI{
+    margin-left: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.page_img{
+    font-size: 18px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.block{
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 18% 10px 0;
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    display: block;
+    left: 18px;
+}
+
+.block a{
+    font-weight: bold;
+}
+
+.TI_title{
+    background: #f4f4f4;
+    padding: 8px 18px 10px 18px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 20px;
+}
